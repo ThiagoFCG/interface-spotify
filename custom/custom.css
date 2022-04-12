@@ -5,6 +5,7 @@
 }
 
 html, body {
+    overflow-y: hidden;
     height: 100%;
 }
 
@@ -13,13 +14,94 @@ section#home_principal {
     height: 100vh;
 }
 
+/* ASIDE */
+
 #home_principal .aside {
-    background-color: blue;
+    background-color: black;
     height: 90vh;
 }
 
+.box_logo {
+    display: block;
+    margin: 30px 0px 0px 10px;
+}
+
+.box_lista {
+    margin: 15px 10px 0px 10px;
+}
+
+.box_lista ul li {
+    padding: 10px 0px;
+}
+
+.box_lista ul li a {
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.box_lista_parte02 {
+    margin-top: 30px;
+}
+
+.icon_add_aside {
+    color: #696969;
+    padding: 1px;
+    border-radius: 3px;
+    background-color: #cccccc;
+}
+
+.icon_favorite_aside {
+    border-radius: 3px;
+    padding: 1px;
+    background: linear-gradient(120deg, #433199, #534a9a, #758799);
+}
+
+.icons_aside {
+    font-size: 21pt;
+}
+
+.divider {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box_lista_parte03 ul li {
+    padding: 0px 0px 5px 0px;
+}
+
+.box_lista_parte03 ul li a {
+    font-weight: 300;
+}
+
+.box_download {
+    margin-top: 50px;
+}
+
+.box_download ul {
+
+}
+
+.box_download ul li a{
+    font-weight: 400;
+}
+
+
+.icon_download_aside {
+    color: #aaaaaa;
+    font-size: 16pt;
+    border-radius: 100%;
+    border: 2px solid #aaaaaa;
+}
+
+.box_imagem {
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+/* MAIN */
+
 #home_principal .main {
-    background-color: black;
+    background: linear-gradient(to bottom, #c0243a, #911a2d, #5e111b, #250f12, #191011, #121212);
     height: 90vh;
 }
 
@@ -28,29 +110,21 @@ section#home_principal {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: grey;
+    background-color: #181818;
     height: 10vh;
+    border-top: 1px solid #242424;
+    padding: 0px 10px;
 }
 
+/* BLOCO 01 */
+
 .bloco_footer_01 {
-    background-color: #181818;
     height: 10vh;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.bloco_footer_02 {
-    background-color: orange;
-    height: 10vh;
-}
-
-.bloco_footer_03 {
-    background-color: aqua;
-    height: 10vh;
-}
-
 .paragrafo_footer_left {
-    margin: 10px;
     grid-row: 2 / 3;
 }
 
@@ -59,3 +133,81 @@ section#home_principal {
     font-weight: 200;
     color: white;
 }
+
+.icon_footer_left {
+    font-weight: 100;
+    color: #a1a1a1;
+}
+
+/* BLOCO 02 */
+
+.bloco_footer_02 {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco_footer_02 span {
+    color: white;
+}
+
+#progress {
+    height: 10px;
+    width: 500px;
+    margin: 0px 10px;
+}
+
+.icon_transform {
+    color: #21bb4d;
+}
+
+.icon_previous {
+    font-size: 20pt;
+    color: #a1a1a1;
+}
+
+.icon_play {
+    font-size: 25pt;
+    color: white;
+}
+
+.icon_next {
+    font-size: 20pt;
+    color: #a1a1a1;
+}
+
+.icon_repeat {
+    color: #21bb4d;
+}
+
+.icon_progress {
+    margin: 0px 2px;
+}
+
+.box_progress span {
+    font-weight: 200;
+}
+
+/* BLOCO 03 */
+
+.bloco_footer_03 {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons_volume {
+    font-size: 15pt;
+    color: #a1a1a1;
+}
+
+#progress_volume {
+    height: 10px;
+    width: 100px;
+}
+
+/* */
