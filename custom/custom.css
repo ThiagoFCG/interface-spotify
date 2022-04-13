@@ -105,6 +105,193 @@ section#home_principal {
     height: 90vh;
 }
 
+.main .box_icon_topo {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.box_usuario_topo {
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.9;
+    width: 200px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.box_icon_topo .box_imagem_user {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 4px;
+    margin-right: 5px;
+}
+
+.box_imagem_user #imagem_usuario_topo {
+    border-radius: 100%;
+    width: 100%;
+}
+
+.box_icon_topo .span_user {
+    font-size: 10pt;
+    color: white;
+}
+
+.box_icon_topo .icon_drop_down_user {
+    color: white;
+}
+
+.main .icon_topo_main_active {
+    padding: 2px;
+    color: rgb(196, 196, 196);
+    border-radius: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.main .icon_topo_main {
+    padding: 2px;
+    color: rgb(196, 196, 196);
+    border-radius: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.box_imagem_main {
+    margin-top: 60px;
+}
+
+.box_imagem_main #imagem_rock {
+    width: 100%;
+}
+
+.box_titulo_main {
+    margin-top: 140px;
+}
+
+.box_titulo_main .paragrafo01_playlist {
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+
+.box_titulo_main .titulo_playlist {
+    color: white;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box_titulo_main .paragrafo02_playlist {
+    color: white;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.box_titulo_main .span01_playlist {
+    font-weight: 600;
+    color: white;
+}
+
+.box_titulo_main .span02_playlist {
+    color: white;
+    font-weight: 100;
+}
+
+.main .box_musicas {
+    height: 100%;
+    margin-left: -11px;
+    margin-right: -11px;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.box_musicas .box_icon_musicas {
+    padding: 10px 0px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.box_icon_musicas .icon_box_musicas_play {
+    color: #27d660;
+    font-size: 35pt;
+}
+
+.box_icon_musicas .icon_box_musicas_favorite {
+    color: #27d660;
+    font-size: 25pt;
+    margin-left: 15px;
+}
+
+.box_icon_musicas .icon_box_musicas_pontos {
+    color: rgb(151, 151, 151);
+    margin-left: 15px;
+}
+
+.box_lista_topo_musicas {
+    height: 25px;
+    padding: 0px 30px 0 30px;
+}
+
+.box_lista_topo_musicas .span_box_musicas {
+    text-transform: uppercase;
+    color: #696969;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+.box_musicas .box_divider_lista {
+    display: flex;
+    justify-content: center;
+}
+
+.box_musicas .row {
+    margin: 0;
+    padding: 0;
+}
+
+.box_musicas .divider {
+    width: 97%;
+}
+
+.box_musicas .box_bottom_lista {
+    height: 20px;
+    margin: 0px 40px;
+}
+
+.box_bottom_lista .box_album_titulo {
+
+}
+
+.box_bottom_lista .box_album {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.box_album_titulo .paragrafo_imagem_titulo {
+    color: white;
+    margin-left: 10px;
+}
+
+.box_album_titulo .span_imagem_titulo {
+    color: white;
+}
+
+.box_imagem_titulo {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.box_imagem_titulo .imagem_album_01 {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
 #home_principal .footer {
     width: 100%;
     position: fixed;
