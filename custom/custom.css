@@ -290,6 +290,43 @@ section#home_principal {
     border-radius: 5px;
 }
 
+.box_bottom_lista .box_album_lista {
+
+}
+
+.box_album_lista .box_paragrafo_album {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.box_paragrafo_album .paragrafo_album {
+    margin-top: 21.5px;
+    color: #8a8a8a;
+}
+
+.box_adicionado_lista .box_paragrafo_adicionado {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.box_paragrafo_adicionado .paragrafo_adicionado {
+    margin-top: 21.5px;
+    color: #8a8a8a;
+}
+
+.box_cronometro_lista .box_paragrafo_cronometro {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box_paragrafo_cronometro .paragrafo_cronometro {
+    margin-top: 21.5px;
+    color: #8a8a8a;
+}
 /* FOOTER */
 
 #home_principal .footer {
