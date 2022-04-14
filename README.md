@@ -1,2 +1,2 @@
-# criando_um_spotify
- usamos HTML5 e CSS3 para a criação da interface
+# Réplica do Spotify
+ Uma interface do Spotify usando apenas HTML5 e CSS3
