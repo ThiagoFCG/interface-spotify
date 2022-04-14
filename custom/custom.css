@@ -35,8 +35,12 @@ section#home_principal {
 }
 
 .box_lista ul li a {
-    font-weight: 400;
+    font-weight: 900;
     color: #cccccc;
+}
+
+.link_menu_topo:hover {
+    color: white;
 }
 
 .box_lista_parte02 {
@@ -70,15 +74,16 @@ section#home_principal {
 }
 
 .box_lista_parte03 ul li a {
+    color: grey;
     font-weight: 300;
+}
+
+.box_lista_parte03 a:hover {
+    color: white;
 }
 
 .box_download {
     margin-top: 50px;
-}
-
-.box_download ul {
-
 }
 
 .box_download ul li a{
@@ -228,105 +233,6 @@ section#home_principal {
     color: rgb(151, 151, 151);
     margin-left: 15px;
 }
-
-.box_lista_topo_musicas {
-    height: 25px;
-    padding: 0px 30px 0 30px;
-}
-
-.box_lista_topo_musicas .span_box_musicas {
-    text-transform: uppercase;
-    color: #696969;
-    font-weight: 600;
-    font-size: 10pt;
-}
-
-.box_musicas .box_divider_lista {
-    display: flex;
-    justify-content: center;
-}
-
-.box_musicas .row {
-    margin: 0;
-    padding: 0;
-}
-
-.box_musicas .divider {
-    width: 97%;
-}
-
-.box_musicas .box_bottom_lista {
-    height: 20px;
-    margin: 0px 40px;
-}
-
-.box_bottom_lista .box_album_titulo {
-
-}
-
-.box_bottom_lista .box_album {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 0px 5px 0px;
-}
-
-.box_album_titulo .paragrafo_imagem_titulo {
-    color: white;
-    margin-left: 10px;
-}
-
-.box_album_titulo .span_imagem_titulo {
-    color: white;
-}
-
-.box_imagem_titulo {
-    width: 40px;
-    margin-left: 10px;
-}
-
-.box_imagem_titulo .imagem_album_01 {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.box_bottom_lista .box_album_lista {
-
-}
-
-.box_album_lista .box_paragrafo_album {
-    margin: 0px 0px 10px 0px;
-    display: flex;
-    align-items: center;
-}
-
-.box_paragrafo_album .paragrafo_album {
-    margin-top: 21.5px;
-    color: #8a8a8a;
-}
-
-.box_adicionado_lista .box_paragrafo_adicionado {
-    margin: 0px 0px 10px 0px;
-    display: flex;
-    align-items: center;
-}
-
-.box_paragrafo_adicionado .paragrafo_adicionado {
-    margin-top: 21.5px;
-    color: #8a8a8a;
-}
-
-.box_cronometro_lista .box_paragrafo_cronometro {
-    margin: 0px 0px 10px 0px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.box_paragrafo_cronometro .paragrafo_cronometro {
-    margin-top: 21.5px;
-    color: #8a8a8a;
-}
 /* FOOTER */
 
 #home_principal .footer {
@@ -349,18 +255,37 @@ section#home_principal {
 }
 
 .paragrafo_footer_left {
+    width: 400px;
     grid-row: 2 / 3;
 }
 
 .paragrafo_footer_left p {
     font-size: 10pt;
-    font-weight: 200;
+    font-weight: 400;
     color: white;
+}
+
+.paragrafo_footer_01:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.paragrafo_footer_02 {
+    color: rgb(160, 160, 160) !important;
+}
+
+.paragrafo_footer_02:hover {
+    cursor: pointer;
+    color: white !important;
 }
 
 .icon_footer_left {
     font-weight: 100;
     color: #a1a1a1;
+}
+.icon_footer_left:hover {
+    cursor: pointer;
+    color: white;
 }
 
 /* BLOCO 02 */
@@ -387,9 +312,17 @@ section#home_principal {
     color: #21bb4d;
 }
 
+.icon_transform:hover {
+    color: #4bfb7d;
+}
+
 .icon_previous {
     font-size: 20pt;
     color: #a1a1a1;
+}
+
+.icon_previous:hover {
+    color: white;
 }
 
 .icon_play {
@@ -402,8 +335,16 @@ section#home_principal {
     color: #a1a1a1;
 }
 
+.icon_next:hover {
+    color: white;
+}
+
 .icon_repeat {
     color: #21bb4d;
+}
+
+.icon_repeat:hover {
+    color: #4bfb7d;
 }
 
 .icon_progress {
@@ -427,6 +368,9 @@ section#home_principal {
 .icons_volume {
     font-size: 15pt;
     color: #a1a1a1;
+}
+.icons_volume:hover {
+    color: white;
 }
 
 #progress_volume {
