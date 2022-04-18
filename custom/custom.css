@@ -1,3 +1,5 @@
+/* ------------------------------ CONFIGURAÇÃO PADRÃO ------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +16,11 @@ section#home_principal {
     overflow-y: hidden;
 }
 
-/* ASIDE */
+/* ------------------------------ ASIDE LATERAL ------------------------------- */
 
 #home_principal .aside {
     background-color: black;
+    width: 17vw;
     height: 90vh;
 }
 
@@ -43,13 +46,13 @@ section#home_principal {
     color: #cccccc;
 }
 
+.link_menu_topo:hover {
+    color: white;
+}
+
 .box_imagem .imagem_rock_ira {
     width: 350px;
     height: 300px;
-}
-
-.link_menu_topo:hover {
-    color: white;
 }
 
 .box_lista_parte02 {
@@ -84,14 +87,20 @@ section#home_principal {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #181818;
+    border-radius: 5px;
+    background-color: transparent;
 }
 ::-webkit-scrollbar {
-    width: 10px;
-    background: #181818;
+    width: 7px;
+    border-radius: 5px;
+    background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #505050;
+    background-color: #8e8e8e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c9c9c9;
 }
 
 .box_lista_parte03 ul li {
@@ -128,28 +137,68 @@ section#home_principal {
     margin-left: -20px;
 }
 
-/* MAIN */
+/* ------------------------------ ASIDE RIGHT ------------------------------- */
+
+#home_principal .aside_right {
+    background-color: black;
+    width: 17vw;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+}
+
+/* ------------------------------ MAIN FULL ------------------------------- */
 
 #home_principal .main {
     background: linear-gradient(to bottom, #c0243a, #911a2d, #5e111b, #250f12, #191011, #121212);
+    width: 66vw;
     height: 90vh;
+    padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .main .box_icon_topo {
-    margin-top: 20px;
-    margin-left: 10px;
+    background-color: #5e111b;
+    width: 66vw;
+    padding: 20px 20px;
+    position: absolute;
+    top: 0;
+    right: 17vw;
 }
+
+/* -------------------- MAIN BLOCO UPGRADE ----------------------*/
+
+.box_upgrade {
+    margin: 0px 30px 0px 0px;
+}
+
+.box_upgrade .link_upgrade {
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.642);
+    border: 1px solid white;
+    font-weight: 900;
+    font-size: 10pt;
+    transition: none;
+    letter-spacing: 2px;
+}
+
+.box_upgrade .link_upgrade:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+/* -------------------- MAIN BLOCO USUÁRIO ----------------------*/
 
 .box_usuario_topo {
     border-radius: 20px;
     background-color: black;
     opacity: 0.9;
-    width: 200px;
+    width: 175px;
     height: 35px;
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .box_usuario_topo:hover {
@@ -162,7 +211,6 @@ section#home_principal {
 }
 
 .box_icon_topo .box_imagem_user {
-    background-color: white;
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -198,15 +246,16 @@ section#home_principal {
 }
 
 .main .icon_topo_main_active {
-    padding: 2px;
-    color: rgb(196, 196, 196);
+    padding: 5px;
+    color: white;
     border-radius: 100%;
     background-color: black;
     opacity: 0.8;
+    margin-right: 20px;
 }
 
 .main .icon_topo_main {
-    padding: 2px;
+    padding: 5px;
     color: rgb(196, 196, 196);
     border-radius: 100%;
     background-color: black;
@@ -220,21 +269,29 @@ section#home_principal {
 }
 
 .box_master_imagem_main {
+    margin-top: 40px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .box_imagem_main {
     width: 17% !important;
     margin-top: 60px;
+    margin-right: 40px;
+    margin-left: 10px !important;
 }
 
 .box_imagem_main #imagem_rock {
     width: 240px;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 .box_titulo_main {
     width: 83% !important;
     margin-top: 140px;
+
 }
 
 .box_titulo_main .paragrafo01_playlist {
@@ -266,58 +323,37 @@ section#home_principal {
     font-weight: 100;
 }
 
+/* ------------------------------ MAIN CONTEÚDO PLAYLIST ------------------------------- */
+
 .main .box_musicas {
+    width: 100%;
     height: auto;
-    margin-left: -11px;
-    margin-right: -11px;
+    padding: 20px 20px 20px 20px;
     background-color: rgb(0, 0, 0, 0.3);
 }
 
-.box_musicas .box_icon_musicas {
-    padding: 10px 0px 10px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.box_icon_musicas .icon_box_musicas_play {
-    color: #27d660;
-    font-size: 35pt;
-}
-
-.box_icon_musicas .icon_box_musicas_favorite {
-    color: #27d660;
-    font-size: 25pt;
-    margin-left: 15px;
-}
-
-.box_icon_musicas .icon_box_musicas_pontos {
-    color: rgb(151, 151, 151);
-    margin-left: 15px;
-}
-/* FOOTER */
+/* ------------------------------ FOOTER FULL ------------------------------- */
 
 #home_principal .footer {
     border-top: 1px solid rgb(49, 49, 49);
-    width: 100%;
+    width: 100vw;
     position: fixed;
     left: 0;
     bottom: 0;
     background-color: #181818;
     height: 10vh;
-    padding: 0px 10px;
+
 }
 
-/* BLOCO 01 */
+/* ------------------------------ BLOCO 01 DO FOOTER ------------------------------- */
+
+/* HOVER PEGANDO TANTO NO PARAGRAFO QUANTO NOS ICONS, PORQUE ESTÃO JUNTOS EM UMA ÚNICA LINHA */
+
 
 .bloco_footer_01 {
     height: 10vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.paragrafo_footer_left {
-    width: 400px;
-    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
 }
 
 .paragrafo_footer_left p {
@@ -349,7 +385,7 @@ section#home_principal {
     color: white;
 }
 
-/* BLOCO 02 */
+/* ------------------------------ BLOCO 02 DO FOOTER ------------------------------- */
 
 .bloco_footer_02 {
     height: 10vh;
@@ -361,12 +397,6 @@ section#home_principal {
 
 .bloco_footer_02 span {
     color: white;
-}
-
-#progress {
-    height: 10px;
-    width: 500px;
-    margin: 0px 10px;
 }
 
 .icon_transform {
@@ -391,6 +421,11 @@ section#home_principal {
     color: white;
 }
 
+.icon_play:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .icon_next {
     font-size: 20pt;
     color: #a1a1a1;
@@ -412,11 +447,24 @@ section#home_principal {
     margin: 0px 2px;
 }
 
-.box_progress span {
-    font-weight: 200;
+.bloco_footer_02 .box_progress {
+    align-items: center;
+    display: flex;
 }
 
-/* BLOCO 03 */
+.box_progress span {
+    font-size: 9pt;
+    font-weight: 300;
+    color: rgb(172, 172, 172);
+}
+
+#progress {
+    height: 10px;
+    width: 500px;
+    margin: 0px 10px;
+}
+
+/* ------------------------------ BLOCO 03 DO FOOTER ------------------------------- */
 
 .bloco_footer_03 {
     height: 10vh;
@@ -448,7 +496,7 @@ section#home_principal {
     height: 4px;
     background: #f7f7f7;
     border-radius: 5px;
-  }
+}
 
 .bloco_footer_03 .box_volume input[type='range']::-webkit-slider-thumb {
     background-color: rgb(14, 218, 109);
@@ -464,6 +512,7 @@ section#home_principal {
     font-size: 15pt;
     color: #a1a1a1;
 }
+
 .icons_volume:hover {
     color: white;
 }
@@ -473,75 +522,77 @@ section#home_principal {
     width: 100px;
 }
 
-/* MEDIA WIDTH */
+/* ------------------------------ VOLUME MOBILE ------------------------------- */
 
-@media screen and (max-width: 1800px){
-    .box_imagem_main #imagem_rock {
-        width: 200px;
-    }
-    .box_titulo_main {
-        width: 83% !important;
-        margin-top: 100px;
-    }
+.box_volume_mobile {
+    width: 66vw;
+    background-color:rgb(5, 5, 5);
+    position: absolute;
+    bottom: 10vh;
+    display: none;
+    padding: 10px 25px 10px 20px;
 }
 
-@media screen and (max-width: 1470px){
-    .box_imagem_main #imagem_rock {
-        width: 150px;
-    }
-    .box_titulo_main {
-        width: 83% !important;
-        margin-top: 50px;
-    }
+.main .box_volume_mobile input[type=range] {
+    width: 100px;
 }
 
-@media screen and (max-width: 1366px){
-    .box_lista ul li a {
-        font-size: 9pt;
-    }
-    .box_logo .imagem_logo_aside {
-        width: 120px;
-    }
+.box_volume_mobile .box_volume_children {
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-@media screen and (max-width: 1210px){
-    .box_imagem_main #imagem_rock {
-        display: none;
-    }
-    .box_imagem_main {
-        width: 0 !important;
-    }
-    .box_titulo_main {
-        width: 100% !important;
-    }
-
-    .box_lista ul li a {
-        font-size: 7pt;
-    }
-
-    .box_titulo_main h1{
-        font-size: 30pt;
-    }
+.box_volume_mobile .box_paragrafo_mobile {
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-@media screen and (max-width: 1115px){
-    #home_principal .aside {
-        display: none;
-    }
-    #home_principal .main {
-        width: 100%;
-    }
-    .box_icon_topo .button-collapse {
-        display: initial;
-    }
-    .box_logo_aside_mobile .imagem_logo_mobile{
-        width: 150px;
-    }
+.box_paragrafo_mobile .paragrafo_mobile {
+    color:#7b7b7b;
+    font-weight: 900;
+    font-size: 10pt;
 }
 
-/* FIM DO MEDIA WIDTH */
+.box_paragrafo_mobile .paragrafo_mobile:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
 
-/* MENU MOBILE */
+.box_volume_children input[type=range] {
+    border-radius: 5px;
+    border-color: #323232;
+}
+
+.box_volume_children input[type="range" i] {
+    cursor: default;
+    color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+.box_volume_children input[type='range']::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #f7f7f7;
+    border-radius: 5px;
+}
+
+.box_volume_children input[type='range']::-webkit-slider-thumb {
+    background-color: rgb(14, 218, 109);
+    border-radius: 60px;
+    color: red;
+}
+
+.box_volume_children input[type=range]+.thumb {
+    display: none;
+}
+
+/* ------------------------------ MENU MOBILE ------------------------------- */
 
 .menu_mobile_aside .side-nav {
     height: 100%;
@@ -570,6 +621,7 @@ section#home_principal {
 .box_logo_aside_mobile .imagem_logo_mobile{
     margin: 20px 0px 20px 10px;
 }
+
 .menu_mobile_aside .box_logo_aside_mobile .link_logo_mobile {
     border: none;
 }
@@ -634,6 +686,166 @@ section#home_principal {
     background: linear-gradient(120deg, #21bb4d, #4bfb7d, #5fff8c);
 }
 
-/* FIM DO MENU MOBILE */
+/* ------------------------------ MEDIA WIDTH ------------------------------- */
 
-/* INPUT RANGE MUSICA */
+@media screen and (max-width: 1800px) {
+    .paragrafo_footer_left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragrafo_footer_left i {
+        display: none;
+    }
+
+    .box_imagem_main #imagem_rock {
+        width: 200px;
+    }
+
+    .box_titulo_main {
+        width: 83% !important;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .box_imagem_main #imagem_rock {
+        width: 150px;
+    }
+
+    .box_titulo_main {
+        width: 83% !important;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1366px){
+
+    .box_lista ul li a {
+        font-size: 9pt;
+    }
+
+    .box_logo .imagem_logo_aside {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1210px){
+
+    .bloco_footer_01 {
+        display: none;
+    }
+
+    .bloco_footer_02 {
+        width: 100vw !important;
+    }
+
+    .bloco_footer_03 {
+        display: none;
+    }
+
+    /* ------------------ TIMELINE PLAYER -------------------- */
+
+    #progress {
+        height: 10px;
+        width: 400px;
+        margin: 0px 10px;
+    }
+
+    /* ------------------ VOLUME MOBILE -------------------- */
+
+    .main .box_volume_mobile {
+        display:flex;
+    }
+
+    .main .box_musicas {
+        padding-bottom: 70px;
+    }
+
+    .box_imagem_main #imagem_rock {
+        display: none;
+    }
+
+    .box_imagem_main {
+        margin-right: -20px;
+    }
+
+    .box_imagem_main {
+        width: 0 !important;
+    }
+
+    .box_titulo_main {
+        width: 100% !important;
+    }
+
+    .box_lista ul li a {
+        font-size: 7pt;
+    }
+
+    .box_titulo_main h1 {
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    #home_principal .aside {
+        display: none;
+    }
+
+    #home_principal .aside_right {
+        display: none;
+    }
+
+    .main .box_icon_topo {
+        width: 100vw;
+        right: 0;
+    }
+
+    #home_principal .main {
+        width: 100%;
+    }
+
+    .main .box_icon_topo {
+        width: 100vw;
+    }
+
+    .box_icon_topo .button-collapse {
+        display: initial;
+    }
+
+    .box_logo_aside_mobile .imagem_logo_mobile {
+        width: 150px;
+    }
+
+    /* ------------------ TIMELINE PLAYER -------------------- */
+
+    #progress {
+        height: 10px;
+        width: 250px;
+        margin: 0px 10px;
+    }
+    
+    /* ------------------ VOLUME MOBILE -------------------- */
+
+    .main .box_volume_mobile {
+        width: 100vw;
+    }
+
+    .box_volume_mobile .box_volume_children {
+        width: 50vw;
+    }
+    
+    .box_volume_mobile .box_paragrafo_mobile {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .box_icon_topo .box_upgrade {
+        display: none;
+    }
+
+    .box_paragrafo_mobile .paragrafo_mobile{
+        font-size: 7pt;
+    }
+}
