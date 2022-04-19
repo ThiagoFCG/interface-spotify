@@ -96,6 +96,7 @@ section#home_principal {
     background: transparent;
 }
 ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
     background-color: #8e8e8e;
 }
 
@@ -145,12 +146,165 @@ section#home_principal {
     height: 90vh;
     position: absolute;
     right: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* FRIEND ACTIVITY */
+
+.box_friend_activity {
+    width: 17vw;
+    height: 77px;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.box_friend_activity .span_friend {
+    color: #aaaaaa;
+    font-weight: 900;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+.box_friend_activity .person_add_friend {
+    color: #aaaaaa;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.box_friend_activity .person_add_friend:hover {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    background-color: #696969;
+}
+
+/* ALLOW FRIENDS */
+
+.box_allow_friends {
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.box_allow_friends .paragrafo_friend {
+    color: #aaaaaa;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* ICON ALLOW FRIENDS */
+
+.box_icons_allow_friends {
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.box_icons_allow_friends .box_icon_allow_01 {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_icons_allow_friends .box_icon_allow_02 {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_icons_allow_friends .box_icon_allow_03 {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_icons_allow_friends .icon_allow_friends {
+    color: white;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.box_icons_allow_friends .box_conversa_allow {
+    width: 13vw;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.box_conversa_allow .conversa_01{
+    width: 6vw;
+    height: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.box_conversa_allow .conversa_02{
+    width: 4vw;
+    height: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.box_conversa_allow .conversa_03{
+    width: 5vw;
+    height: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+/* SETTINGS */
+
+.box_settings {
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.box_settings .paragrafo_settings {
+    color: #aaaaaa;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* BTN SETTINGS */
+.box_btn_settings {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.box_btn_settings .btn_settings {
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 10pt;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 35px;
+}
+
+.box_btn_settings .btn_settings:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
 }
 
 /* ------------------------------ MAIN FULL ------------------------------- */
 
 #home_principal .main {
-    background: linear-gradient(to bottom, #c0243a, #911a2d, #5e111b, #250f12, #191011, #121212);
+    background: linear-gradient(to bottom, rgb(23, 23, 23), rgb(21, 21, 21),black);
     width: 66vw;
     height: 90vh;
     padding: 0;
@@ -159,7 +313,7 @@ section#home_principal {
 }
 
 .main .box_icon_topo {
-    background-color: #5e111b;
+    background-color: rgb(12, 12, 12);
     width: 66vw;
     padding: 20px 20px;
     position: absolute;
@@ -283,6 +437,7 @@ section#home_principal {
 }
 
 .box_imagem_main #imagem_rock {
+    border-radius: 10px !important;
     width: 240px;
     cursor: pointer;
     border-radius: 3px;
@@ -688,7 +843,7 @@ section#home_principal {
 
 /* ------------------------------ MEDIA WIDTH ------------------------------- */
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1822px) {
     .paragrafo_footer_left {
         display: flex;
         flex-direction: column;
@@ -717,10 +872,13 @@ section#home_principal {
         width: 83% !important;
         margin-top: 50px;
     }
+
+    .box_btn_settings .btn_settings {
+        font-size: 7pt;
+    }
 }
 
 @media screen and (max-width: 1366px){
-
     .box_lista ul li a {
         font-size: 9pt;
     }
@@ -728,10 +886,19 @@ section#home_principal {
     .box_logo .imagem_logo_aside {
         width: 120px;
     }
+    
+    /* ------------------ ASIDE RIGHT -------------------- */
+    
+    .box_allow_friends .paragrafo_friend, .box_settings .paragrafo_settings {
+        font-size: 9pt;
+    }
+    
+    .box_btn_settings .btn_settings {
+        font-size: 6pt;
+    }    
 }
 
 @media screen and (max-width: 1210px){
-
     .bloco_footer_01 {
         display: none;
     }
