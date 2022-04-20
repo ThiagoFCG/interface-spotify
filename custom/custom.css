@@ -483,8 +483,152 @@ section#home_principal {
 .main .box_musicas {
     width: 100%;
     height: auto;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0px;
     background-color: rgb(0, 0, 0, 0.3);
+}
+
+.box_musicas .box_icons_topo_musicas {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_icons_topo_musicas .icon_play_arrow {
+    color: black;
+    padding: 20px;
+    font-size: 20pt;
+    background-color: #21bb4d;
+    border-radius: 50%;
+}
+
+.box_icons_topo_musicas .icon_play_arrow:hover {
+    transform: scale(1.1);
+}
+
+
+.box_icons_topo_musicas .icon_favorite_arrow {
+    color:#c9c9c9;
+    font-size: 30pt;
+    padding: 20px;
+}
+
+.box_icons_topo_musicas .icon_favorite_arrow:hover {
+    color: #fff;
+}
+
+.box_icons_topo_musicas .icon_more_arrow {
+    color:#c9c9c9;
+    font-size: 20pt;
+    padding: 20px 20px 20px 0px;
+}
+
+.box_icons_topo_musicas .icon_more_arrow:hover {
+    color: #fff;
+}
+
+/* ------------------------------ COLUNAS TÍTULOS MUSICAS ------------------------------- */
+
+.box_musicas .box_colunas_titulos_musicas {
+    height: 100px;
+    padding: 30px 35px 35px 35px;
+}
+
+.box_colunas_titulos_musicas .span_rasthag {
+    color: #c9c9c9;
+    font-size: 15pt;
+    margin-right: 25px;
+}
+
+.box_colunas_titulos_musicas .span_title {
+    color: #c9c9c9;
+    font-size: 13pt;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.box_colunas_titulos_musicas .span_plays {
+    color: #c9c9c9;
+    font-size: 13pt;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.box_colunas_titulos_musicas .icon_schedule {
+    color: #c9c9c9;
+    font-size: 17pt;
+    margin-right: 40px;
+}
+
+.box_colunas_titulos_musicas .coluna_musicas_01, .coluna_musicas_02, .coluna_musicas_03 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.box_colunas_titulos_musicas .coluna_musicas_01 {
+    justify-content: flex-start;
+}
+
+.box_colunas_titulos_musicas .coluna_musicas_02 {
+    justify-content: flex-end;
+}
+
+.box_colunas_titulos_musicas .coluna_musicas_03 {
+    justify-content: flex-end;
+}
+
+/* ------------------------------ ROWS MÚSICAS ------------------------------- */
+
+.box_musicas .box_lista_musicas {
+    margin: 10px 35px 5px 35px;
+    padding: 25px 0px 5px 0px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.box_musicas .box_lista_musicas:hover {
+    background-color: rgba(38, 38, 38, 0.9);
+}
+
+.box_titulo_musicas .span_numero_musica {
+    font-size: 13pt;
+    color: #c9c9c9;
+}
+
+.box_titulo_musicas .span_titulo_musica {
+    font-size: 13pt;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.box_plays_musicas .span_numero_views_musica {
+    font-size: 13pt;
+    margin-right: 20px;
+    color: #c9c9c9;
+}
+
+.box_timer_musicas .span_timer_musica {
+    font-size: 13pt;
+    margin-right: 40px;
+    color: #c9c9c9;
+}
+
+.box_titulo_musicas .span_active_musica {
+    color: #4bfb7d;
+}
+
+.box_titulo_musicas .paragrafo_cantor {
+    width: 150px;
+    color: #c9c9c9;
+    margin-top: 5px;
+    margin-left: 38px;
+}
+
+.box_titulo_musicas .paragrafo_cantor:hover {
+    color: white;
 }
 
 /* ------------------------------ FOOTER FULL ------------------------------- */
@@ -895,7 +1039,26 @@ section#home_principal {
     
     .box_btn_settings .btn_settings {
         font-size: 6pt;
-    }    
+    }
+
+    /* ------------------ BOX MUSICAS  -------------------- */
+
+    .box_titulo_musicas .span_numero_musica {
+        font-size: 10pt;
+    }
+
+    .box_titulo_musicas .span_titulo_musica {
+        font-size: 10pt;
+    }
+
+    .box_plays_musicas .span_numero_views_musica {
+        font-size: 10pt;
+    }
+
+    .box_timer_musicas .span_timer_musica {
+        font-size: 10pt;
+    }
+
 }
 
 @media screen and (max-width: 1210px){
@@ -1004,6 +1167,27 @@ section#home_principal {
     
     .box_volume_mobile .box_paragrafo_mobile {
         width: 50vw;
+    }
+}
+
+@media screen and (max-width: 712px) {
+
+    /* ------------------ BOX MUSICAS  -------------------- */
+
+    .box_titulo_musicas .span_numero_musica {
+        font-size: 9pt;
+    }
+
+    .box_titulo_musicas .span_titulo_musica {
+        font-size: 9pt;
+    }
+
+    .box_plays_musicas .span_numero_views_musica {
+        font-size: 9pt;
+    }
+
+    .box_timer_musicas .span_timer_musica {
+        font-size: 9pt;
     }
 }
 
