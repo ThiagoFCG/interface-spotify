@@ -1,5 +1,3 @@
-/* ------------------------------ CONFIGURAÇÃO PADRÃO ------------------------------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -90,11 +88,13 @@ section#home_principal {
     border-radius: 5px;
     background-color: transparent;
 }
+
 ::-webkit-scrollbar {
     width: 7px;
     border-radius: 5px;
     background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: #8e8e8e;
@@ -125,7 +125,6 @@ section#home_principal {
     font-weight: 400;
 }
 
-
 .icon_download_aside {
     color: #aaaaaa;
     font-size: 16pt;
@@ -133,10 +132,18 @@ section#home_principal {
     border: 2px solid #aaaaaa;
 }
 
-.box_imagem {
+.box_lista .box_imagem {
     margin-top: 10px;
     margin-left: -20px;
+    width: 17vw;
+    height: 22vh;
 }
+
+.box_imagem .imagem_rock_ira {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
 
 /* ------------------------------ ASIDE RIGHT ------------------------------- */
 
@@ -583,7 +590,7 @@ section#home_principal {
 /* ------------------------------ ROWS MÚSICAS ------------------------------- */
 
 .box_musicas .box_lista_musicas {
-    margin: 10px 35px 5px 35px;
+    margin: 10px 35px 0px 35px;
     padding: 25px 0px 5px 0px;
     background-color: transparent;
     border-radius: 5px;
